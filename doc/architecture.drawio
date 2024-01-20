@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2024-01-20T22:30:40.225Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="6fEZLF6XQMxEdpem33Lv" version="22.1.21" type="device">
+  <diagram name="Page-1" id="lR3cJXgIsFg0pnvCLUv8">
+    <mxGraphModel dx="794" dy="494" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="78FtMAEtMcEYTPIOWQmv-1" value="&lt;b&gt;AWS&lt;/b&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="425" y="70" width="290" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="78FtMAEtMcEYTPIOWQmv-3" value="&lt;br&gt;api gateway" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.api_gateway;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="425" y="80" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="78FtMAEtMcEYTPIOWQmv-5" value="lambda" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="77" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="78FtMAEtMcEYTPIOWQmv-6" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.dynamo_db;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="270" width="72" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="78FtMAEtMcEYTPIOWQmv-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.65;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="78FtMAEtMcEYTPIOWQmv-3" target="78FtMAEtMcEYTPIOWQmv-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="270" as="sourcePoint" />
+            <mxPoint x="520" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="78FtMAEtMcEYTPIOWQmv-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="78FtMAEtMcEYTPIOWQmv-5" target="78FtMAEtMcEYTPIOWQmv-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="310" as="sourcePoint" />
+            <mxPoint x="600" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="78FtMAEtMcEYTPIOWQmv-11" value="Internet" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="78FtMAEtMcEYTPIOWQmv-12" value="App" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Browser.svg;" vertex="1" parent="1">
+          <mxGeometry x="130" y="150" width="65" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="78FtMAEtMcEYTPIOWQmv-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.805;exitY=0.026;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="78FtMAEtMcEYTPIOWQmv-12" target="78FtMAEtMcEYTPIOWQmv-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="290" as="sourcePoint" />
+            <mxPoint x="240" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="78FtMAEtMcEYTPIOWQmv-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.875;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="78FtMAEtMcEYTPIOWQmv-11" target="78FtMAEtMcEYTPIOWQmv-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="180" as="sourcePoint" />
+            <mxPoint x="370" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
