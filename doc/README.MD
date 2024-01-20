@@ -1,10 +1,19 @@
 # Overview
 Restuarant API in ation
 
+____
+
 ## Architecture
 ![architecture.drawio](./architecture.drawio.png)
 
+____
+
 ## API Gateway
+
+![apigateway](./apigateway.png)
+
+____
+
 ## Lambda
 * Get Menu Items
   ```python
