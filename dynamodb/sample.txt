@@ -1,0 +1,7 @@
+"PartitionKey","SortingKey","entity_type","entry_type","name","price"
+"MENU#Starters","ITEM#MASALAVADA","menu_item","","Masala Vada","10"
+"MENU#Starters","ITEM#PAKORA","menu_item","","Pakora","8"
+"MENU#Desert","ITEM#GULABJAMUN","","menu_item","Gulab Jamun","4"
+"MENU#Desert","ITEM#DoubleKaMeeta","","menu_item","Double Ka Meeta","5"
+"MENU#Entries","ITEM#DumkaChicken","","menu_item","Dumka Chicken","15"
+"MENU#Entries","ITEM#ButterChicken","","menu_item","Butter Chicken","15"
