@@ -1,7 +1,58 @@
 ## RestAPI Guidelines
 
-[resource](https://www.espn.com/nfl/game?gameId=401326631)
+[quick introduction](https://www.geeksforgeeks.org/rest-api-introduction/)
 
+* Resource
+  * Information that can be named and accessed via a URI, and is accessed through a common interface based on the HTTP standard methods
+________
+
+* Steps in designing
+  * Identify the object model which will be exposed as resources in the API
+    * menuitem, customer , order, payment
+  * Create resource URIs
+    * Decide the URIs. Use **nouns** in the resource paths and name collections with **plural names**
+	  * api.example/customers , api.example/orders/id api.example/payments/id
+  * Representation (Json/Xml)
+    * Usually json now-a-days.
+	```json
+	{
+	  "id": "12345",
+	  "name": "firstname lastname",
+	  "email": "firstname@test.com",
+	  "address": {
+	     "address1" : "address 1",
+		 "address2" : "address 2",
+		 "city": "city",
+		 "state": "state",
+		 "zipcode": 97006
+	  }
+	}
+	```
+	
+  * Assign Http Method
+    * GET to retrieving, POST to create etc.,
+	```txt
+		GET /customers         get all customers
+		GET /customers/123456  get a particular customer
+		POST / customer    create new customer
+		PUT /customer/id   updating existing customer
+	```
+   * [quick design tips](https://www.restapitutorial.com/lessons/restquicktips.html)
+   * [Best practices](https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/)
+   * [Naming resources](https://restfulapi.net/resource-naming/)
+   * [Versioning](https://restfulapi.net/versioning/)
+   * [Long Running](https://restfulapi.net/rest-api-design-for-long-running-tasks/)
+   * [Status Codes](https://restfulapi.net/rest-api-design-for-long-running-tasks/)
+   * [Designing Ids]()
+   * [Problem Details]()
+   * How to identify resources?
+     * Analyze your use cases to find domain nouns that can be operated using “create,” “read,” “update,” or “delete” operations.
+	 * Designate each noun as a resource.
+     * Use HTTP methods such as POST, GET, PUT, and DELETE to implement “create,” “read,” “update,” and “delete” operations, respectively, on each resource 1.
+______
+
+* Idempotent
+* Domain
 * Constraints
   * Uniform interface
     * The uniform interface constraint defines the interface between clients and servers. It simplifies and decouples the architecture, which enables each part to evolve independently. The four guiding principles of the uniform interface are
@@ -47,8 +98,17 @@
 ## Consider Connectedness
 One of the principles of REST is connectedness—via hypermedia links (search HATEOAS). While services are still useful without them, APIs become more self-descriptive and discoverable when links are returned in the response. At the very least, a 'self' link reference informs clients how the data was or can be retrieved. Additionally, utilize the HTTP Location header to contain a link on resource creation via POST (or PUT). For collections returned in a response that support pagination, 'first', 'last', 'next' and 'prev' links at a minimum are very helpful.
 
+* Paging, Filtering, Sorting
+* Versioning
+* Chatty vs Chunky
+* Links
+* N+1 problem
+* Headers/Body/Query parameters
 _____
 
+## [Explore APIs]
+  * Google, Microsoft, Github 
+______
 ## Resources
 [React CORS Guide: What It Is and How to Enable It](https://www.stackhawk.com/blog/react-cors-guide-what-it-is-and-how-to-enable-it/)
 [React Tutorial at W3schools](https://www.w3schools.com/REACT/DEFAULT.ASP)
