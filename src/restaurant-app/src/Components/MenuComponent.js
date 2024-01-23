@@ -1,10 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import MenuItemComponent from './MenuItemComponent.js'
 
+
+
 function MenuComponent() {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+
+  const customGroupBy = (input, key) => {
+    return input.reduce((acc, currentValue) => {
+      let groupKey = currentValue[key];
+      if (!acc[groupKey]) {
+        acc[groupKey] = [];
+      }
+      acc[groupKey].push(currentValue);
+      return acc;
+    }, {});
+  };
 
   useEffect(() => {
     fetch('https://foblm106he.execute-api.us-west-2.amazonaws.com/prod/myrestaurant/menu',)
@@ -14,6 +27,8 @@ function MenuComponent() {
         data.map(item => {
           console.log(item.name)
         })
+
+
         setLoading(false);
       })
       .catch(error => {
@@ -32,24 +47,32 @@ function MenuComponent() {
     return <p>Error: {error.message}</p>;
   }
 
+  const menuItemsByCategory = customGroupBy(data, 'category')
+  console.log('--------------------')
+  console.log(menuItemsByCategory)
   return (
-    <div>
-      <table align='center'>
-        <th>Name</th>
-        <th>Category</th>
-        <th>Cost</th>
-        {data.map((item) =>
-          <MenuItemComponent menuitem={item} />
-        )}
-      </table>
+    <div classname="container" align="center">
+      {
+        Object.keys(menuItemsByCategory).map(category => {
+          let items =  menuItemsByCategory[category].map(menuitem => {
+            return <MenuItemComponent menuitem={menuitem} />
+          })
 
-      <div>
-        categories = Object.groupBy(data, ({ category }) => category)
-      </div>
+          return <div><h3>{category}</h3> {items}</div> 
+        })
+      }
     </div>
-    
+
   )
 }
+
+
+// Object.keys(menuItemsByCategory).forEach(cat => {
+//   <h1>{cat}</h1>
+//   menuItemsByCategory[cat].map(menuitem =>{
+//     <MenuItemComponent menuitem={menuitem} />
+//   })
+// })
 
 
 // Export the component to be used elsewhere

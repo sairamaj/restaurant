@@ -5,7 +5,6 @@ function MenuItemComponent({menuitem}) {
     return (
         <tr>
             <td><label>{menuitem.name}</label></td>
-            <td><label>{menuitem.category}</label></td>
             <td><label>{menuitem.price}</label></td>
         </tr>
     )
