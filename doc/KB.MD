@@ -123,17 +123,33 @@ ______
 
 Certainly! Here are some of the functional requirements that a library management system should have:
 
-Cataloging and Classification: The system should facilitate efficient cataloging and classification of library resources, including books, journals, multimedia, and other materials. It must support standard classification schemes like Dewey Decimal Classification (DDC) and Library of Congress Classification (LCC).
+Cataloging and Classification: The system should facilitate efficient cataloging and classification of library resources, including books, journals, multimedia, and other materials. 
+
+It must support standard classification schemes like Dewey Decimal Classification (DDC) and Library of Congress Classification (LCC).
+
 Search and Retrieval: A user-friendly search interface is crucial to enable patrons to find and access resources quickly. The system should support various search criteria, such as title, author, subject, and keywords, providing relevant results with minimum effort.
+
 Circulation Management: The system must handle the circulation of library materials, including check-in, check-out, renewals, and holds. It should track due dates, manage fines, and provide alerts for overdue items.
+
 User Management: User accounts and profiles should be managed effectively, allowing library staff to register new users, update information, and maintain records of borrowing history.
+
 Acquisition and Budget Management: The system should assist in the acquisition process, managing purchase orders, invoices, and vendor information. It should also support budget tracking to ensure efficient resource allocation.
+
 Serials Management: For libraries with periodical subscriptions, the system should handle serials management, including subscription details, issues, and renewals.
+
 Interlibrary Loan (ILL): The system should facilitate interlibrary loan requests, enabling seamless resource sharing between libraries.
+
 Digital Resource Management: With the proliferation of digital content, the system should manage electronic resources, such as e-books, e-journals, and databases.
+
 Reporting and Analytics: Comprehensive reporting features are essential to analyze library usage, collection trends, and user behavior, aiding in data-driven decision-making.
+
 [some examples](https://github.com/BassemGhoniem/simpleLibAPI)
+
 [another example](https://www.javaguides.net/2023/08/library-management-system-project-using-spring-boot.html)
 _____
+
+Using external react components
+
+____
 
 
