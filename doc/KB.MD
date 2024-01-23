@@ -49,6 +49,9 @@ ________
      * Analyze your use cases to find domain nouns that can be operated using “create,” “read,” “update,” or “delete” operations.
 	 * Designate each noun as a resource.
      * Use HTTP methods such as POST, GET, PUT, and DELETE to implement “create,” “read,” “update,” and “delete” operations, respectively, on each resource 1.
+   * Domain-driven design (DDD) is a software development approach that emphasizes the importance of understanding the business domain. DDD helps to identify the domain nouns that can be operated using “create,” “read,” “update,” or “delete” operations, and designates each noun as a resource. The domain model acts as a ubiquitous language to help communication between software developers and domain experts 1.
+     * In terms of RESTful API design, DDD can be used to model domain behavior to a RESTful API, based on DDD concepts. The domain model can be used to describe a business resource, and how client systems interact with it. It can detail operations, methods, paths, and status codes. The REST model is a refinement and/or abstraction of the domain data model with a focus on interoperability 23.
+
 ______
 
 * Idempotent
@@ -112,5 +115,25 @@ ______
 ## Resources
 [React CORS Guide: What It Is and How to Enable It](https://www.stackhawk.com/blog/react-cors-guide-what-it-is-and-how-to-enable-it/)
 [React Tutorial at W3schools](https://www.w3schools.com/REACT/DEFAULT.ASP)
+
+
+## Examples
+
+### Library management
+
+Certainly! Here are some of the functional requirements that a library management system should have:
+
+Cataloging and Classification: The system should facilitate efficient cataloging and classification of library resources, including books, journals, multimedia, and other materials. It must support standard classification schemes like Dewey Decimal Classification (DDC) and Library of Congress Classification (LCC).
+Search and Retrieval: A user-friendly search interface is crucial to enable patrons to find and access resources quickly. The system should support various search criteria, such as title, author, subject, and keywords, providing relevant results with minimum effort.
+Circulation Management: The system must handle the circulation of library materials, including check-in, check-out, renewals, and holds. It should track due dates, manage fines, and provide alerts for overdue items.
+User Management: User accounts and profiles should be managed effectively, allowing library staff to register new users, update information, and maintain records of borrowing history.
+Acquisition and Budget Management: The system should assist in the acquisition process, managing purchase orders, invoices, and vendor information. It should also support budget tracking to ensure efficient resource allocation.
+Serials Management: For libraries with periodical subscriptions, the system should handle serials management, including subscription details, issues, and renewals.
+Interlibrary Loan (ILL): The system should facilitate interlibrary loan requests, enabling seamless resource sharing between libraries.
+Digital Resource Management: With the proliferation of digital content, the system should manage electronic resources, such as e-books, e-journals, and databases.
+Reporting and Analytics: Comprehensive reporting features are essential to analyze library usage, collection trends, and user behavior, aiding in data-driven decision-making.
+[some examples](https://github.com/BassemGhoniem/simpleLibAPI)
+[another example](https://www.javaguides.net/2023/08/library-management-system-project-using-spring-boot.html)
+_____
 
 
