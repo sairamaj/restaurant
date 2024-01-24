@@ -152,4 +152,88 @@ Using external react components
 
 ____
 
+### Best Practices of React Component
+
+* Use functional components: Functional components are simpler and easier to read than class components. They also perform better because they don’t have the overhead of a class instance.
+
+* Break components into smaller parts: Break down your components into smaller, reusable parts. This makes your code more modular and easier to maintain.
+
+* Keep state separate from UI logic: Avoid mixing state and UI logic in the same component. Instead, use props to pass data down to child components.
+
+* Use props and state appropriately: Use props to pass data down to child components, and use state to manage data that changes over time.
+
+* Write test cases: Write test cases for your components to ensure that they work as expected. You can use a testing framework like Jest to write your test cases.
+
+* Use React.memo: Use React.memo to memoize functional components and avoid unnecessary re-renders.
+
+* Use shorthand for boolean props: Use shorthand for boolean props to make your code more concise and readable.
+
+* Limit component creation: Limit the number of components you create to improve performance. Use shouldComponentUpdate or React.memo to prevent unnecessary re-renders.
+
+[Some more best practices](https://kinsta.com/blog/react-best-practices/)
+
+_____
+
+#### Modules
+In JavaScript, modules are a way to organize and structure your code into separate files, each containing a distinct functionality. Modules allow you to encapsulate related code and define clear dependencies between different parts of your application.
+
+A module in JavaScript is just a file of code that can be imported and exported. You can think of a module as a reusable and independent unit of code. Modules are the building blocks of your codebase. As your application gets bigger, you can split your code up into multiple files, aka modules.
+
+To use modules in JavaScript, you need to use the import and export statements. The import statement is used to import a module, and the export statement is used to export a module. There are two types of exports: named exports and default exports.
+
+Here is an example of a named export:
+
+  ```javascript
+    // person.js
+    export const name = 'John';
+    export const age = 30;
+
+    // message.js
+    export default function() {
+      return 'Hello, World!';
+    }
+    You can import named exports using curly braces {} and default exports without them. Here is an example:
+
+    // app.js
+    import { name, age } from './person.js';
+    import message from './message.js';
+
+    console.log(name); // John
+    console.log(age); // 30
+    console.log(message()); // Hello, World!
+    ```
+_____
+
+#### Template Literals
+A template literal is a string literal that allows you to embed expressions inside a string. It is enclosed by backticks (``). Template literals are a convenient way to create strings that contain variables or expressions. Here is an example:
+
+  ```JavaScript
+
+  const name = 'John';
+  const age = 30;
+  console.log(`My name is ${name} and I am ${age} years old.`);
+  ```
+In this example, we are using a template literal to create a string that contains two variables name and age. The output is My name is John and I am 30 years old..
+
+Template literals can also span multiple lines, making it easier to create multi-line strings. Here is an example:
+
+  ```javascript
+
+  const message = `This is a
+  multi-line
+  string.`;
+  console.log(message);
+  ```
+In this example, we are using a template literal to create a multi-line string. The output is:
+
+This is a
+multi-line
+string.
+
+Template literals are a powerful feature in JavaScript that can make your code more concise and readable.
+
+_____
+### Testing
+
+
 

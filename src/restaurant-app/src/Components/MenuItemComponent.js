@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 function MenuItemComponent({menuitem}) {
-    console.log(menuitem)
     return (
         <tr>
             <td><label>{menuitem.name}</label></td>

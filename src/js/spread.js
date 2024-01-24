@@ -13,3 +13,13 @@ const last = array2.slice(-1)
 console.log(first, last[0])
 
 
+const numbers = [1, 2, 3];
+console.log(...numbers); // 1 2 3
+
+const str = 'hello';
+console.log(...str); // h e l l o
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+const mergedObj = { ...obj1, ...obj2 };
+console.log(mergedObj); // { a: 1, b: 2, c: 3, d: 4 }
